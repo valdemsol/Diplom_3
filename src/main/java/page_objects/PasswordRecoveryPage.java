@@ -10,14 +10,14 @@ import java.time.Duration;
 
 public class PasswordRecoveryPage extends CorePage {
 
+    //кнопка Восстановить
+    @FindBy(xpath = ".//button[text()='Восстановить']")
+    private WebElement restorePasswordButton;
+
     public PasswordRecoveryPage(WebDriver driver) {
         super(driver);
         currentUrl = pageUrl + FORGOT_PASSWORD;
     }
-
-    //кнопка Восстановить
-    @FindBy(xpath = ".//button[text()='Восстановить']")
-    private WebElement restorePasswordButton;
 
     //Ожидание
     public void waitForRestorePasswordButton() {

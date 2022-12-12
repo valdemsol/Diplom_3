@@ -11,11 +11,6 @@ import java.time.Duration;
 
 public class RegistrationPage extends CorePage {
 
-    public RegistrationPage(WebDriver driver) {
-        super(driver);
-        currentUrl = pageUrl + REGISTER;
-    }
-
     //Поле Имя
     @FindBy(xpath = ".//fieldset[1]//input")
     private WebElement nameInput;
@@ -35,6 +30,11 @@ public class RegistrationPage extends CorePage {
     //Ошибка Некорректный пароль
     @FindBy(xpath = ".//p[text()='Некорректный пароль']")
     private WebElement incorrectPasswordError;
+
+    public RegistrationPage(WebDriver driver) {
+        super(driver);
+        currentUrl = pageUrl + REGISTER;
+    }
 
     //Шаги
     @Step("Ввести имя")
@@ -59,7 +59,7 @@ public class RegistrationPage extends CorePage {
         this.fillPasswordInput(password);
     }
 
-    @Step("клик на кнопку Зарегистрироваться")
+    @Step("Клик на кнопку Зарегистрироваться")
     public void clickSignUpButton() {
         signUpButton.click();
     }

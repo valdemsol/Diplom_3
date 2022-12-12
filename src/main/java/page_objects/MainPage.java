@@ -11,11 +11,6 @@ import java.time.Duration;
 
 public class MainPage extends CorePage {
 
-    public MainPage(WebDriver driver) {
-        super(driver);
-        currentUrl = pageUrl;
-    }
-
     //Кнопка Войти в аккаунт
     @FindBy(xpath = ".//button[text()='Войти в аккаунт']")
     private WebElement signInButton;
@@ -43,6 +38,11 @@ public class MainPage extends CorePage {
     //Раздел Начинки
     @FindBy(xpath = ".//div/span[text()='Начинки']")
     private WebElement toppingTab;
+
+    public MainPage(WebDriver driver) {
+        super(driver);
+        currentUrl = pageUrl;
+    }
 
     //Шаги
     @Step("Клик на кнопку Войти в аккаунт")

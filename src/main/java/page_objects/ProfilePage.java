@@ -11,11 +11,6 @@ import java.time.Duration;
 
 public class ProfilePage extends CorePage {
 
-    public ProfilePage(WebDriver driver) {
-        super(driver);
-        currentUrl = pageUrl + PROFILE;
-    }
-
     //Конструктор
     @FindBy(xpath = ".//p[text() = 'Конструктор']")
     private WebElement constructor;
@@ -28,7 +23,12 @@ public class ProfilePage extends CorePage {
     @FindBy(xpath = ".//button[text()='Выход']")
     private WebElement logOutButton;
 
-    //шаги
+    public ProfilePage(WebDriver driver) {
+        super(driver);
+        currentUrl = pageUrl + PROFILE;
+    }
+
+    //Шаги
     @Step("Создать заказ")
     public void clickConstructor() {
         constructor.click();

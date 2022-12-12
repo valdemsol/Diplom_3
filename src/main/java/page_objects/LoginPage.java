@@ -11,22 +11,20 @@ import java.time.Duration;
 
 public class LoginPage extends CorePage {
 
+    //Поле Email
+    @FindBy(xpath = ".//input[@name = 'name']")
+    private WebElement emailInput;
+    //Поле Password
+    @FindBy(xpath = ".//input[@type = 'password']")
+    private WebElement passwordInput;
+    //Кнопка Войти
+    @FindBy(xpath = ".//button[text()='Войти']")
+    private WebElement signInButton;
+
     public LoginPage(WebDriver driver) {
         super(driver);
         currentUrl = pageUrl + LOGIN;
     }
-
-    //Поле Email
-    @FindBy(xpath = ".//input[@name = 'name']")
-    private WebElement emailInput;
-
-    //Поле Password
-    @FindBy(xpath = ".//input[@type = 'password']")
-    private WebElement passwordInput;
-
-    //Кнопка Войти
-    @FindBy(xpath = ".//button[text()='Войти']")
-    private WebElement signInButton;
 
     //Шаги
     @Step("Ввести почту")
