@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<inventory>
+  <outlets>
+    <outlet id="t1">
+      <name>Тестовый магазин 1</name>
+      <city>Москва</city>
+      <address>Бескудниковский бульвар, 56, корп. 1</address>
+      <subway>Петр.-Разумовская</subway>
+      <lat>55.873781</lat>
+      <lon>37.536667</lon>
+      <online>true</online>
+      <available geoId="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">true</available>
+    </outlet>
+    <outlet id="t2">
+      <name>Тестовый магазин 2</name>
+      <city>Москва</city>
+      <address>ул. Тверская, 1</address>
+      <subway>Охотный Ряд</subway>
+      <lat>55.757220</lat>
+      <lon>37.613830</lon>
+      <online>true</online>
+      <available geoId="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">true</available>
+    </outlet>
+  </outlets>
+  <availability>
+    <!-- 555763: Хлопковый лонгслив оверсайз, серый меланж (XS, S, M, L) -->
+    <product id="555763" outlet="t1">
+      <sizes>
+        <size id="556656"><count>1</count></size>
+        <size id="556657"><count>3</count></size>
+        <size id="556658"><count>0</count></size>
+        <size id="556659"><count>2</count></size>
+      </sizes>
+    </product>
+    <product id="555763" outlet="t2">
+      <sizes>
+        <size id="556656"><count>0</count></size>
+        <size id="556657"><count>2</count></size>
+        <size id="556658"><count>4</count></size>
+        <size id="556659"><count>1</count></size>
+      </sizes>
+    </product>
+
+    <!-- 555764: Хлопковый лонгслив оверсайз, светло-бежевый (XS, S, M, L) -->
+    <product id="555764" outlet="t1">
+      <sizes>
+        <size id="556660"><count>0</count></size>
+        <size id="556661"><count>5</count></size>
+        <size id="556662"><count>0</count></size>
+        <size id="556663"><count>1</count></size>
+      </sizes>
+    </product>
+    <product id="555764" outlet="t2">
+      <sizes>
+        <size id="556660"><count>0</count></size>
+        <size id="556661"><count>1</count></size>
+        <size id="556662"><count>0</count></size>
+        <size id="556663"><count>3</count></size>
+      </sizes>
+    </product>
+
+    <!-- 555765: Классические брюки с защипами, серый (XS, S, M, L) -->
+    <product id="555765" outlet="t1">
+      <sizes>
+        <size id="556664"><count>2</count></size>
+        <size id="556665"><count>0</count></size>
+        <size id="556666"><count>1</count></size>
+        <size id="556667"><count>0</count></size>
+      </sizes>
+    </product>
+    <product id="555765" outlet="t2">
+      <sizes>
+        <size id="556664"><count>1</count></size>
+        <size id="556665"><count>0</count></size>
+        <size id="556666"><count>3</count></size>
+        <size id="556667"><count>2</count></size>
+      </sizes>
+    </product>
+  </availability>
+</inventory>
