@@ -76,5 +76,13 @@
         <size id="556667"><count>2</count></size>
       </sizes>
     </product>
+
+    <!-- 555765: Бирка -->
+    <product id="556627" outlet="t1">
+      <count>3</count>
+    </product>
+    <product id="556627" outlet="t2">
+      <count>2</count>
+    </product>
   </availability>
 </inventory>
