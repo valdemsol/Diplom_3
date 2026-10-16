@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <discounts>
-  <discount sale_point_tag="Спеццена Сочи" product_id="321001" price_card="149" promo_id="A-17" promo_name="Булка недели" apply_other_discounts="false" write_off_bonus="true"/>
+  <discount sale_point_tag="Спеццена Сочи" product_id="321001" price_card="1000" promo_id="A-17" promo_name="Булка недели" apply_other_discounts="false" write_off_bonus="true"/>
   <discount sale_point_tag="Спеццена Сочи" product_id="321002" percent_card="10" apply_other_discounts="true" write_off_bonus="true"/>
   <discount sale_point_tag="Спеццена Сочи" product_id="DD-3" price="199" apply_other_discounts="true" write_off_bonus="true"/>
   <discount sale_point_tag="Спеццена Сочи" product_id="DD-4" price_card="149" percent_card="10" apply_other_discounts="true" write_off_bonus="true"/>
